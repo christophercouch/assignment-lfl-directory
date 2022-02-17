@@ -80,7 +80,7 @@ const $ = function(selector) {
 function makeBox(object) {
   let employee =
       `<div class='section'>
-<p>Name: ${object.name}</p>
+<p>Employee Name: ${object.name}</p>
 <p>Office Number: ${object.officeNumber}</p>
 <p>Phone Number: ${object.phoneNumber}</p>
 </div>`

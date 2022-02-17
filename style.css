@@ -5,8 +5,8 @@
     color: #fff;
     font-size: 24px;
     padding-top:120px;
-    font-weight: 700;
-    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-family: 'Yatra One', sans-serif;
 }
 
 .fa-address-book{
@@ -17,12 +17,54 @@ a {
     color:#fff;
 }
 
-a:hover {
-    color:#D6CB65;
-}
-
 /* page */
 
+.body {
+    background-color: teal;
+}
+
+.section {
+    background-color: thistle;
+}
+
+#content > div > p {
+    color: #333333;
+    font-size: large;
+    font-weight: 700;
+    font-family: 'Yatra One', sans-serif;
+}
+
+#content > div > p:hover {
+    color: #000;
+}
+
+#add-name, #add-office, #add-phone,
+#update-name, #update-office, #update-phone,
+#verify-name, #delete-name {
+    font-size: 24px!important;
+    color: #000;
+    font-family: 'Yatra One', sans-serif;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.form-control {
+    font-size: 24px;
+}
+
+#add-button, #verify-button, #update-button, #delete-button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Yatra One', sans-serif;
+    text-transform: uppercase;
+    box-shadow: #ff3399;
+}
+
+#add-button:hover, #verify-button:hover, #update-button:hover, #delete-button:hover {
+    background-color: rgb(56, 56, 56);
+    cursor:url(images/wow-cursor2.png), auto;
+}
 
 .viewport{
     height: 150vh;
@@ -40,5 +82,49 @@ a:hover {
     border: solid 5px #000;
     border-radius: 10px;
     margin:10px;
-    padding-left: 5px;
+    padding-left: 10%;
+    text-align: left;
+}
+
+/* random styling */
+
+.fa-address-book {
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+  a:hover {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 2s ease-in-out infinite ;
+    background-size: 400% 100%;
+    cursor:url(images/wow-cursor.png), auto;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
