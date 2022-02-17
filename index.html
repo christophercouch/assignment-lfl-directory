@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LFL Employee Directory</title>
-  </head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<title>LFL Employee Directory</title>
+</head>
 
-  <body>
+<body>
+    <script src="./app.js"></script>
     <script src="dom.js"></script>
-    <script src="employee-list.js"></script>
-    <script src="app.js"></script>
-  </body>
+    <script src="employeeList.js"></script>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-4 fixed" id="siteNav">
+				<nav class="nav flex-column text-center h-100">
+          <i class="far fa-address-book"></i>
+          <br>
+          <a class="nav-link active" href="#" id="view">VIEW</a>
+          <a class="nav-link" href="#" id='add'>ADD</a>
+          <a class="nav-link" href="#" id='verify'>VERIFY</a>
+          <a class="nav-link" href="#" id='update'>UPDATE</a>
+          <a class="nav-link" href="#" id='delete'>DELETE</a>
+        </nav>
+      </div>
+
+			<div class="col">
+				<div class="row" id="addBar">
+					<div class="input-group input-group-sm">
+						<input type="text" class="form-control" placeholder="Name" id="addName">
+						<input type="text" class="form-control" placeholder="Office #" id="addNum">
+						<input type="text" class="form-control" placeholder="Phone #" id="addPhone">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary" type="button" id="addBtn">Add</button>
+						</div>
+					</div>
+        </div>
+
+				<div class="row" id="upBar">
+					<div class="input-group input-group-sm">
+						<input type="text" class="form-control" placeholder="Name" id="updateName">
+						<input type="text" class="form-control" placeholder="Office #" id="updateNum">
+						<input type="text" class="form-control" placeholder="Phone #" id="updatePhone">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary" type="button" id="upBtn">Update</button>
+						</div>
+					</div>
+        </div>
+
+				<div class="row" id="verifyBar">
+					<div class="col">
+						<div class="input-group input-group-sm">
+							<input type="text" class="form-control" placeholder="Enter Name" id="nameVerify">
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="button" id="verifyBtn">Search</button>
+							</div>
+						</div>
+					</div>
+        </div>
+
+				<div class="row" id="deleteBar">
+					<div class="col">
+						<div class="input-group input-group-sm">
+							<input type="text" class="form-control" placeholder="Enter Name" id="deleteName">
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="button" id="deleteBtn">Delete</button>
+							</div>
+						</div>
+					</div>
+        </div>
+
+				<div class="row">
+					<div class="col" id="content"></div>
+        </div>
+
+			</div>
+		</div>
+</body>
+
 </html>
