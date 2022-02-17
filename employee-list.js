@@ -1,42 +1,42 @@
 const employeeList = [
   {
     name: 'Jan',
-    officeNum: 1,
-    phoneNum: '222-222-2222'
+    officeNumber: 1,
+    phoneNumber: '222-222-2222'
   },
   {
     name: 'Juan',
-    officeNum: 304,
-    phoneNum: '489-789-8789'
+    officeNumber: 304,
+    phoneNumber: '489-789-8789'
   },
   {
     name: 'Margie',
-    officeNum: 789,
-    phoneNum: '789-789-7897'
+    officeNumber: 789,
+    phoneNumber: '789-789-7897'
   },
   {
     name: 'Sara',
-    officeNum: 32,
-    phoneNum: '222-789-4654'
+    officeNumber: 32,
+    phoneNumber: '222-789-4654'
   },
   {
     name: 'Tyrell',
-    officeNum: 3,
-    phoneNum: '566-621-0452'
+    officeNumber: 3,
+    phoneNumber: '566-621-0452'
   },
   {
     name: 'Tasha',
-    officeNum: 213,
-    phoneNum: '789-766-5675'
+    officeNumber: 213,
+    phoneNumber: '789-766-5675'
   },
   {
     name: 'Ty',
-    officeNum: 211,
-    phoneNum: '789-766-7865'
+    officeNumber: 211,
+    phoneNumber: '789-766-7865'
   },
   {
     name: 'Sarah',
-    officeNum: 345,
-    phoneNum: '222-789-5231'
+    officeNumber: 345,
+    phoneNumber: '222-789-5231'
   }
 ];
