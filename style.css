@@ -1,1 +1,44 @@
-/* Your work here */
+/* left main menu */
+
+#left-menu{
+    background-color: #333333;
+    color: #fff;
+    font-size: 24px;
+    padding-top:120px;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.fa-address-book{
+    font-size: 50px;
+}
+
+a {
+    color:#fff;
+}
+
+a:hover {
+    color:#D6CB65;
+}
+
+/* page */
+
+
+.viewport{
+    height: 150vh;
+}
+
+.container{
+    margin-left: 0px;
+}
+
+#ADD, #UPDATE, #VERIFY, #DELETE{
+    display: none;
+}
+
+.section{
+    border: solid 5px #000;
+    border-radius: 10px;
+    margin:10px;
+    padding-left: 5px;
+}
