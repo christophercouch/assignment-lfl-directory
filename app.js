@@ -1,5 +1,5 @@
 // create employees
-updateList();
+employeeRecycle();
 
 $('#view').on('click', view);
 $('#add').on('click', add);
@@ -17,7 +17,7 @@ $('#add-button').on('click', function() {
         phoneNumber: employeePhone
     });
     // update employees
-    updateList();
+    employeeRecycle();
 })
 // verify click action
 $("#verify-button").on('click', function() {
@@ -64,7 +64,7 @@ $('#update-button').on('click', function() {
             employeeList[index].officeNumber = employeeOffice;
         }
     }
-    updateList();
+    employeeRecycle();
 })
 // delete click actions
 $('#delete-button').on('click', function() {
@@ -84,6 +84,6 @@ $('#delete-button').on('click', function() {
     } else {
         // remove employee element
         employeeList.splice(index, 1);
-        updateList();
+        employeeRecycle();
     }
 })

@@ -93,7 +93,7 @@ let employeeUpdates = document.getElementById('UPDATE');
 let employeeDeletes = document.getElementById('DELETE');
 let employeeNavigates = $("#left-menu");
 
-function updateList() {
+function employeeRecycle() {
   $("#content").empty();
   for (i = 0; i < employeeList.length; i++) {
       $('#content').append(makeBox(employeeList[i]));
@@ -105,7 +105,7 @@ function view() {
   employeeVerifies.style.display = 'none';
   employeeUpdates.style.display = 'none';
   employeeDeletes.style.display = 'none';
-  updateList();
+  employeeRecycle();
   employeeNavigates.removeClass("viewport");
 
 }
@@ -115,7 +115,7 @@ function add() {
   employeeVerifies.style.display = 'none';
   employeeUpdates.style.display = 'none';
   employeeDeletes.style.display = 'none';
-  updateList();
+  employeeRecycle();
   employeeNavigates.removeClass("viewport");
 }
 // verify function
@@ -134,7 +134,7 @@ function update() {
   employeeVerifies.style.display = 'none';
   employeeUpdates.style.display = 'block';
   employeeDeletes.style.display = 'none';
-  updateList();
+  employeeRecycle();
   employeeNavigates.removeClass("viewport");
 }
 // delete function
@@ -143,7 +143,7 @@ function terminate() {
   employeeVerifies.style.display = 'none';
   employeeUpdates.style.display = 'none';
   employeeDeletes.style.display = 'block';
-  updateList();
+  employeeRecycle();
   employeeNavigates.removeClass("viewport");
 }
 // auto uppercase strings
