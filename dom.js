@@ -124,7 +124,7 @@ $("#content").empty();
 // applies Viewport height
 employeeNavigates.addClass("viewport");
 }
-// vieupdatew function
+// update function
 function update() {
 employeeAdds.style.display = 'none';
 employeeVerifies.style.display = 'none';
